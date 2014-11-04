@@ -6,6 +6,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Python
 export WORKON_HOME=$HOME/.virtualenvs
+source $HOME/homebrew/bin/virtualenvwrapper.sh
 
 # Make vim the default editor
 export EDITOR="vim"
