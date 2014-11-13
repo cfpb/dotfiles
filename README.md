@@ -1,4 +1,3 @@
-dotfiles
-========
+# CFPB dotfiles
 
-Sensible defaults for new CFPB machines
+Sensible defaults for new CFPB machines.
