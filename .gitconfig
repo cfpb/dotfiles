@@ -1,7 +1,15 @@
+[user]
+#	email = john.doe@cfpb.gov
+#	name = John Doe
+
 [core]
 	excludesfile = ~/.gitignore_global
 	quotepath = false
 	editor = /usr/bin/vim
+
+[http]
+	# Enable large file support for git push
+	postBuffer = 524288000
 
 [alias]
     st = status -s
