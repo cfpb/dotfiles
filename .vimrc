@@ -403,3 +403,5 @@ highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
 nmap  -  <Plug>(choosewin)
 " show big letters
 let g:choosewin_overlay_enable = 1
+
+set hidden
