@@ -11,7 +11,10 @@ ulimit -n 2048
 # Enable bash <tab> completion for grunt
 eval "$(grunt --completion=bash)"
 
-## Initialize Bash Completion
+# Initialize Bash Completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi ]
+
+# Ensure ~/Projects directory is created
+mkdir -p $HOME/Projects

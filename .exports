@@ -8,6 +8,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export WORKON_HOME=$HOME/.virtualenvs
 source $HOME/homebrew/bin/virtualenvwrapper.sh
 
+# Project directory
+export PROJECT_HOME=$HOME/Projects
+
 # Make vim the default editor
 export EDITOR="vim"
 
