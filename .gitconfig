@@ -2,6 +2,19 @@
 #	email = john.doe@cfpb.gov
 #	name = John Doe
 
+# Include git hooks directory for clouseau - https://github.com/cfpb/clouseau
+[init]
+    templatedir = ~/homebrew/share/git-core/templates
+
+# When push.default is set to 'matching', git will push local branches
+# to the remote branches that already exist with the same name.
+#
+# Since Git 2.0, Git defaults to the more conservative 'simple'
+# behavior, which only pushes the current branch to the corresponding
+# remote branch that 'git pull' uses to update the current branch.
+[push]
+    default = matching
+
 [core]
 	excludesfile = ~/.gitignore_global
 	quotepath = false
@@ -101,11 +114,20 @@
     ours = "!f() { git co --ours $@ && git add $@; }; f"
     theirs = "!f() { git co --theirs $@ && git add $@; }; f"
 
-    #list remotes
-    rem="!git config -l | grep remote.*url | tail -n +2"
+    #remotes
+    re = "!git remote -v | grep fetch | sed s/\(fetch\)//"
+    rea = remote add
 
 [merge]
 	tool = opendiff
 
 [mergetool]
-	keepBackup = true
+    keepBackup = true
+
+# authorize internal github if using the `hub` wrapper
+[hub]
+    host = example.com
+
+[include]
+    path = .gitconfig_local
+
