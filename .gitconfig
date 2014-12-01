@@ -2,9 +2,9 @@
 #	email = john.doe@cfpb.gov
 #	name = John Doe
 
-# Include git hooks directory for clouseau - https://github.com/cfpb/clouseau
+# Include git hooks directory for https://example.com/marcesher/dotfiles/tree/master/git-templates
 [init]
-    templatedir = ~/homebrew/share/git-core/templates
+    templatedir = ~/git-templates
 
 # When push.default is set to 'matching', git will push local branches
 # to the remote branches that already exist with the same name.
