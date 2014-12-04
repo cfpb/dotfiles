@@ -14,7 +14,7 @@ eval "$(grunt --completion=bash)"
 # Initialize Bash Completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
-fi ]
+fi
 
 # Ensure ~/Projects directory is created
 mkdir -p $HOME/Projects
