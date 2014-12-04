@@ -115,7 +115,7 @@
     theirs = "!f() { git co --theirs $@ && git add $@; }; f"
 
     #remotes
-    re = "!git remote -v | grep fetch | sed s/\(fetch\)//"
+    re = "!git remote -v | grep fetch | sed s/\\(fetch\\)//"
     rea = remote add
 
 [merge]
