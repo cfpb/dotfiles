@@ -4,7 +4,7 @@
 
 # Include git hooks directory for https://example.com/marcesher/dotfiles/tree/master/git-templates
 [init]
-    templatedir = ~/git-templates
+    templatedir = ~/.git-templates
 
 # When push.default is set to 'matching', git will push local branches
 # to the remote branches that already exist with the same name.
