@@ -32,7 +32,7 @@
     ci = commit
     cm = commit -m
     cma = commit -a -m
-    ca = commit --amend
+    ca = commit -a
     amend = commit --amend
     caa = commit -a --amend -C HEAD
     filelog = log -u
@@ -41,7 +41,7 @@
     ai = add --interactive
 
     co = checkout
-    br = branch 
+    br = branch
     #"!git branch -ra | grep -v done"
     bra = branch -ra
     #list commands
@@ -131,3 +131,5 @@
 [include]
     path = .gitconfig_local
 
+[commit]
+    template = ~/.gitmessage
