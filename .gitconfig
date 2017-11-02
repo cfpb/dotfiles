@@ -2,7 +2,6 @@
 #	email = john.doe@cfpb.gov
 #	name = John Doe
 
-# Include git hooks directory for https://example.com/marcesher/dotfiles/tree/master/git-templates
 [init]
     templatedir = ~/.git-templates
 
@@ -123,10 +122,6 @@
 
 [mergetool]
     keepBackup = true
-
-# authorize internal github if using the `hub` wrapper
-[hub]
-    host = example.com
 
 [include]
     path = .gitconfig_local
