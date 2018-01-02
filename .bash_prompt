@@ -1,7 +1,9 @@
 # Mostly copied from https://github.com/gf3/dotfiles
 # Note: The character just before \[$RESET\ at line 53 is an emoji -- add your fav: http://osxdaily.com/2013/04/08/add-emoji-command-line-bash-prompt
 
-if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
+if [[ $TERM = 'dumb' ]]; then
+  return  0
+elif [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
   export TERM=gnome-256color
 elif infocmp xterm-256color >/dev/null 2>&1; then
   export TERM=xterm-256color
