@@ -140,3 +140,9 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+# Clean up pyc files
+alias rmpyc="find . -name \"*.pyc\" -exec rm -rf {} \;"
+
+# Clean up git conflict dregs
+alias rmorig="find . -name '*.orig' -delete"
